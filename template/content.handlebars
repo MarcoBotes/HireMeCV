@@ -8,7 +8,7 @@
 {{#asyncEach (getPageContent this)}} 
 
 {{#*inline "subList"}}
-    {{#with list}}
+    {{#with items}}
     <ul class="list depth-{{../depth}}">
         {{#each this}}
         <li>{{{coalesce title this}}}</li>
@@ -39,7 +39,7 @@
                     {{#with content}}
                     <p class="content">{{this}}</p>
                     {{/with}}
-                    {{#with list}}
+                    {{#with items}}
                     <ul class="list">
                         {{#each this}}
                             {{#if icon}}

@@ -1,5 +1,5 @@
 {
-    "showDevPage": true,
+    "showDevPage": false,
     "name": "Marco Botes",
     "title": "Full Stack Developer",
     "info": [{
@@ -10,10 +10,14 @@
         {
             "title": "Contact",
             "icon": "contact.svg",
-            "list": [
+            "items": [
                 {
                     "content": "<a href=\"mailto:marco.botes.za+ja@gmail.com\">marco.botes.za+ja@gmail.com</a>",
                     "icon": "mail.svg"
+                },
+                {
+                    "content": "<a href=\"https://github.com/MarcoBotes\">https://github.com/MarcoBotes</a>",
+                    "icon": "github-mark-white.svg"
                 },
                 {
                     "content": "Pretoria, Gauteng",
@@ -24,7 +28,7 @@
         {
             "title": "Skills",
             "icon": "skills.svg",
-            "list": [
+            "items": [
                 {
                     "key": "Languages",
                     "value": "Python, C#, JavaScript, TypeScript, Java"
@@ -50,7 +54,7 @@
         {
             "title": "Hobbies",
             "icon": "fun.svg",
-            "list": [
+            "items": [
                 "Exploring new frameworks, design patterns, and tools to refine and enhance my approach to problem-solving",
                 "Learning about new frameworks"
             ]
@@ -64,7 +68,7 @@
                     "location": "Hoërskool Overkruin",
                     "start": "2011",
                     "end": "2016",
-                    "list": [
+                    "items": [
                         {
                             "title": "Maths, 80%",
                             "cssClass": null
@@ -82,10 +86,10 @@
                 {
                     "title": "Bachelors of Engineering, Computer",
                     "location": "University of Pretoria",
-                    "sub-title": "Incomplete, 90% Complete",
+                    "sub-title": "Incomplete, 1 Module Outstanding",
                     "start": "2017",
                     "end": "2024",
-                    "list": [
+                    "items": [
                         {
                             "title": "EPE321, Software Engineering, 71%",
                             "cssClass": null
@@ -106,47 +110,41 @@
                 "location": "Esri South Africa",
                 "start": "Jan, 2022",
                 "end": "Present",
-                "list": [{
-                        "title": "Front end web development",
+                "items": [
+                    {
+                        "title": "Front-End Web Development",
                         "cssClass": null,
-                        "list": [
-                            "Frameworks like <span class=\"emphasis\">Angular</span>, <span class=\"emphasis\">React</span>",
-                            "Advanced CSS, <span class=\"emphasis\">SCSS</span>, <span class=\"emphasis\">SASS</span>"
+                        "items": [
+                            "Developed and maintained production-grade web applications using Angular and React",
+                            "Implemented fluid UI/UX designs, ensuring accessibility and performance optimizations",
+                            "Built custom PDF report generation solutions using HTML, JavaScript, and CSS for various clients"
                         ]
                     },
                     {
-                        "title": "Back End Development",
+                        "title": "Back-End Service Development",
                         "cssClass": null,
-                        "list": [{
-                                "title": "C#",
-                                "list": [
-                                    "Experience with ASP.NET MVC, developing scalable web applications and APIs",
-                                    "Developed background services and task scheduling using C# and .NET"
-                                ]
-                            },
-                            {
-                                "title": "Python",
-                                "list": [
-                                    "Frameworks like <span class=\"emphasis\">Django</span>, <span class=\"emphasis\">Jinja2</span>, <span class=\"emphasis\">Flask</span>, <span class=\"emphasis\">fastAPI</span>"
-                                ]
-                            },
-                            {
-                                "title": "Java",
-                                "list": [
-                                    "Custom SPI development for Authentication workflows for an OIDC Identity Provider"
-                                ]
-                            }
+                        "items": [
+                            "Designed and implemented RESTful APIs and backend logic using Python (FastAPI, Flask) and C# (ASP.NET)",
+                            "Integrated authentication workflows through custom SPI development for an OIDC Identity Provider"
+                        ]
+                    },
+                    {
+                        "title": "System Integration & Databases",
+                        "cssClass": null,
+                        "items": [
+                            "Architected and optimized large-scale data transactions using PostgreSQL and SQL Server",
+                            "Integrated multiple external services via C# and Python, ensuring seamless data exchange between systems"
+                        ]
+                    },
+                    {
+                        "title": "DevOps & Deployment",
+                        "cssClass": null,
+                        "items": [
+                            "Deployed pipelines for web applications and services to cloud and on-premises environments",
+                            "Actively participated in sprint planning and task tracking, maintaining clear and detailed updates on sprint boards"
                         ]
                     }
                 ]
-            }]
-        },
-        {
-            "title": "Future",
-            "icon": "future.svg",
-            "items": [{
-                "title": "Software Engineer",
-                "location": "your-company"
             }]
         }
     ]

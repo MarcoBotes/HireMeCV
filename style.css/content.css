@@ -240,10 +240,10 @@ a {
     padding-left: 20px;
 }
 .page .content .professional-info .timeline .timeline-item .list.depth-1 {
-    list-style: circle;
+    list-style: square;
 }
 .page .content .professional-info .timeline .timeline-item .list.depth-2 {
-    list-style: square;
+    list-style: circle;
 }
 
 /* ============================================================================================================== */
