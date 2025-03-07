@@ -1,0 +1,100 @@
+<style>{{asset "reset.css"}}</style>
+<style>{{asset "style.css"}}</style>
+
+{{!-- https://marketplace.canva.com/EAFzSzKZZsg/2/0/1131w/canva-modern-minimalist-cv-resume-I8ItJo4ECp0.jpg --}}
+
+
+
+{{#asyncEach (getPageContent this)}} 
+
+{{#*inline "subList"}}
+    {{#with list}}
+    <ul class="list depth-{{../depth}}">
+        {{#each this}}
+        <li>{{{coalesce title this}}}</li>
+        {{> subList depth=(add ../../depth 1)}}
+        {{/each}}
+    </ul>
+    {{/with}}
+{{/inline}}
+
+<div class="page">
+    
+    <div class="content">
+
+        <div class="personal-info pad-20">
+
+            <div class="portrait">
+                <div class="portrait-border">
+                    <img class="portrait-image" src="{{asset "Assets/portrait.jpg" "dataURI"}}">
+                </div>
+            </div>
+
+            {{#each info}}
+                <div class="section">
+                    <div class="header">
+                        <div class="icon">{{{getAsset icon}}}</div>
+                        <h1 class="text">{{title}}</h1>
+                    </div>
+                    {{#with content}}
+                    <p class="content">{{this}}</p>
+                    {{/with}}
+                    {{#with list}}
+                    <ul class="list">
+                        {{#each this}}
+                            {{#if icon}}
+                                <li class="list-element with-icon">
+                                    <div class="icon">{{{getAsset icon}}}</div>
+                                    <p class="text">{{{content}}}</p>
+                                </li>
+                            {{else if key}}
+                                <li class="list-element"><span style="font-weight: bold;">{{key}}:</span> {{value}}</li>
+                            {{else}}
+                                <li class="list-element with-icon">{{this}}</li>
+                            {{/if}}
+                        {{/each}}
+                    </ul>
+                    {{/with}}
+                </div>
+            {{/each}}
+
+        </div>
+
+        <div class="professional-info pad-20">
+
+            <h1 class="name">{{{name}}}</h1>
+            <h1 class="title">{{{title}}}</h1>
+
+            {{#each history}}
+                <div class="timeline">
+                    <div class="header">
+                        <div class="icon">{{{getAsset icon}}}</div>
+                        <h1 class="text">{{title}}</h1>
+                    </div>
+                    {{#each items}}
+                        <div class="timeline-item">
+
+                            <div class="line"></div>
+                            
+                            {{#with (getTimeline this)}}
+                            <h1 class="duration">{{start}} - {{end}}</h1>
+                            {{/with}}
+                            <h2 class="title">{{title}}</h2>
+                            <h3 class="location">{{location}}</h3>
+                            {{#with sub-title}}
+                                <h4 class="sub-title">{{this}}</h4>
+                            {{/with}}
+
+                            {{> subList depth=0}}
+
+                        </div>
+                    {{/each}}
+                </div>
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</div>
+{{/asyncEach}}

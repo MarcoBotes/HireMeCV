@@ -1,0 +1,257 @@
+:root {
+    --color-primary: #343031;
+
+    --page-padding: 50px;
+
+    --personal-info-width: 300px;
+
+    --icon-size: 22px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+    box-sizing: border-box;
+    padding: var(--page-padding);
+    padding-bottom: 0;
+}
+
+.page>.content {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% - var(--page-padding));
+}
+
+/* ============================================================================================================== */
+/* Left: Personal Info */
+/* ============================================================================================================== */
+.page>.content .personal-info {
+
+    width: var(--personal-info-width);
+    border-top-left-radius: var(--personal-info-width);
+    border-top-right-radius: var(--personal-info-width);
+
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* ============================================================================================================== */
+/* Portrait */
+/* ============================================================================================================== */
+.page>.content .personal-info .portrait {
+    position: relative;
+    --image-size: calc(var(--personal-info-width) - 20px * 2);
+    height: var(--image-size);
+    width: var(--image-size);
+
+    margin-bottom: 50px;
+}
+
+.page>.content .personal-info .portrait-border {
+    position: absolute;
+    --image-size: calc(var(--personal-info-width) + 20px);
+    height: var(--image-size);
+    width: var(--image-size);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    
+    background-color: white;
+    border: 5px solid white;
+}
+
+.page>.content .personal-info .portrait-border .portrait-image {
+    box-sizing: border-box;
+    border: 5px solid var(--color-primary);
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+/* ============================================================================================================== */
+/* Personal Section */
+/* ============================================================================================================== */
+.page>.content .personal-info .section {
+    padding: 2px;
+}
+
+.page>.content .personal-info .section .header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.page>.content .personal-info .section .header .icon {
+    width: var(--icon-size);
+}
+.page>.content .personal-info .section .header .text {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.page>.content .personal-info .section:not(:first-child) {
+    margin-top: 20px;
+}
+
+.page>.content .personal-info .section .content {
+    text-align: justify;
+}
+
+.page>.content .personal-info .section .list {
+    list-style: disc;
+}
+
+.page>.content .personal-info .section .list .list-element.with-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.page>.content .personal-info .section .list .list-element:not(.with-icon) {
+    margin-left: var(--icon-size);
+}
+
+.page>.content .personal-info .section .list .list-element .icon {
+    width: var(--icon-size);
+}
+
+.page>.content .personal-info .section .list .list-element .text {
+}
+
+/* ============================================================================================================== */
+/* Right: Professional Info */
+/* ============================================================================================================== */
+.page .content .professional-info {
+    width: 400px;
+    /* background-color: red; */
+}
+
+.page .content .professional-info .name {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.page .content .professional-info .title {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+/* ============================================================================================================== */
+/* Timeline */
+/* ============================================================================================================== */
+
+.page .content .professional-info .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    /* background-color: yellow; */
+}
+
+.page .content .professional-info .timeline .header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page .content .professional-info .timeline .header .icon {
+    width: var(--icon-size);
+    transform: translateX(-9px);
+}
+.page .content .professional-info .timeline .header .text {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.page .content .professional-info .timeline .timeline-item {
+    position: relative;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* background-color: green; */
+}
+
+/* ============================================================================================================== */
+/* Timeline decoration */
+/* ============================================================================================================== */
+.page .content .professional-info .timeline .timeline-item .line {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    --height: calc(100% - 15px);
+
+    top: calc( (100% - var(--height)) / 2);
+    height: var(--height);
+    width: 3px;
+    background-color: var(--color-primary);
+}
+.page .content .professional-info .timeline .timeline-item .line::before,
+.page .content .professional-info .timeline .timeline-item .line::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(calc(-50% + 0.5px));
+    --size: 6px;
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--color-primary);
+    border-radius: 50%;
+}
+.page .content .professional-info .timeline .timeline-item .line::before {
+    top: 0;
+    transform: translateX(calc(-50% + 0.5px)) translateY(-5px);
+}
+.page .content .professional-info .timeline .timeline-item .line::after {
+    bottom: 0;
+    transform: translateX(calc(-50% + 0.5px)) translateY(5px);
+}
+
+
+/* ============================================================================================================== */
+/* Timeline Item */
+/* ============================================================================================================== */
+.page .content .professional-info .timeline .timeline-item .duration {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.page .content .professional-info .timeline .timeline-item .title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.page .content .professional-info .timeline .timeline-item .location {
+    font-style: italic;
+}
+.page .content .professional-info .timeline .timeline-item .sub-title {
+    color: red;
+}
+.page .content .professional-info .timeline .timeline-item .list {
+    list-style: disc;
+    padding-left: 20px;
+}
+.page .content .professional-info .timeline .timeline-item .list.depth-1 {
+    list-style: circle;
+}
+.page .content .professional-info .timeline .timeline-item .list.depth-2 {
+    list-style: square;
+}
+
+/* ============================================================================================================== */
+/* generic */
+/* ============================================================================================================== */
+.pad-20 {
+    padding: 20px !important;
+}
+.emphasis {
+    font-weight: bold !important;
+}

@@ -1,0 +1,153 @@
+{
+    "showDevPage": true,
+    "name": "Marco Botes",
+    "title": "Full Stack Developer",
+    "info": [{
+            "title": "About Me",
+            "icon": "user.svg",
+            "content": "Experienced Software Developer with a strong background in backend development and system integration. Skilled in designing efficient, maintainable code with a focus on performance and security. Passionate about problem-solving and delivering high-quality solutions. Looking for opportunities to apply my expertise in a dynamic environment that values innovation and technical excellence"
+        },
+        {
+            "title": "Contact",
+            "icon": "contact.svg",
+            "list": [
+                {
+                    "content": "<a href=\"mailto:marco.botes.za+ja@gmail.com\">marco.botes.za+ja@gmail.com</a>",
+                    "icon": "mail.svg"
+                },
+                {
+                    "content": "Pretoria, Gauteng",
+                    "icon": "location.svg"
+                }
+            ]
+        },
+        {
+            "title": "Skills",
+            "icon": "skills.svg",
+            "list": [
+                {
+                    "key": "Languages",
+                    "value": "Python, C#, JavaScript, TypeScript, Java"
+                },
+                {
+                    "key": "Frontend",
+                    "value": "Angular, React, HTML, CSS"
+                },
+                {
+                    "key": "Databases",
+                    "value": "PostgreSQL, SQL Server"
+                },
+                {
+                    "key": "Security",
+                    "value": "Keycloak, LDAP, OAuth2, OIDC, Kerberos"
+                },
+                {
+                    "key": "Clairvoyance",
+                    "value": "Can plug the USB in the right way within 4 attempts (average)"
+                }
+            ]
+        },
+        {
+            "title": "Hobbies",
+            "icon": "fun.svg",
+            "list": [
+                "Exploring new frameworks, design patterns, and tools to refine and enhance my approach to problem-solving",
+                "Learning about new frameworks"
+            ]
+        }
+    ],
+    "history": [{
+            "title": "Education",
+            "icon": "education.svg",
+            "items": [{
+                    "title": "High School Diploma",
+                    "location": "Hoërskool Overkruin",
+                    "start": "2011",
+                    "end": "2016",
+                    "list": [
+                        {
+                            "title": "Maths, 80%",
+                            "cssClass": null
+                        },
+                        {
+                            "title": "Sciences, 80%",
+                            "cssClass": null
+                        },
+                        {
+                            "title": "Average, 80%",
+                            "cssClass": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Bachelors of Engineering, Computer",
+                    "location": "University of Pretoria",
+                    "sub-title": "Incomplete, 90% Complete",
+                    "start": "2017",
+                    "end": "2024",
+                    "list": [
+                        {
+                            "title": "EPE321, Software Engineering, 71%",
+                            "cssClass": null
+                        },
+                        {
+                            "title": "EAS410, Cumputer engineering: Architecture and systems, 75%",
+                            "cssClass": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Experience",
+            "icon": "work.svg",
+            "items": [{
+                "title": "Geospatial Developer",
+                "location": "Esri South Africa",
+                "start": "Jan, 2022",
+                "end": "Present",
+                "list": [{
+                        "title": "Front end web development",
+                        "cssClass": null,
+                        "list": [
+                            "Frameworks like <span class=\"emphasis\">Angular</span>, <span class=\"emphasis\">React</span>",
+                            "Advanced CSS, <span class=\"emphasis\">SCSS</span>, <span class=\"emphasis\">SASS</span>"
+                        ]
+                    },
+                    {
+                        "title": "Back End Development",
+                        "cssClass": null,
+                        "list": [{
+                                "title": "C#",
+                                "list": [
+                                    "Experience with ASP.NET MVC, developing scalable web applications and APIs",
+                                    "Developed background services and task scheduling using C# and .NET"
+                                ]
+                            },
+                            {
+                                "title": "Python",
+                                "list": [
+                                    "Frameworks like <span class=\"emphasis\">Django</span>, <span class=\"emphasis\">Jinja2</span>, <span class=\"emphasis\">Flask</span>, <span class=\"emphasis\">fastAPI</span>"
+                                ]
+                            },
+                            {
+                                "title": "Java",
+                                "list": [
+                                    "Custom SPI development for Authentication workflows for an OIDC Identity Provider"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }]
+        },
+        {
+            "title": "Future",
+            "icon": "future.svg",
+            "items": [{
+                "title": "Software Engineer",
+                "location": "your-company"
+            }]
+        }
+    ]
+}

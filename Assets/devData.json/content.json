@@ -1,0 +1,40 @@
+{
+    "name": "Report Template created by Marco Botes",
+    "title": "HTML and Javascript pdf reporting template based on <a href=\"https://marketplace.canva.com/EAFzSzKZZsg/2/0/1131w/canva-modern-minimalist-cv-resume-I8ItJo4ECp0.jpg\">this template</a>",
+    "info": [
+        {
+            "title": "Info Entity",
+            "icon": "construction.svg",
+            "content": "This is a re-usable entity to display info in the personal info section of the page"
+        }
+    ],
+    "history": [
+        {
+            "title": "Timeline Entity",
+            "icon": "construction.svg",
+            "items": [
+                {
+                    "title": "Timeline Item Title",
+                    "location": "Location of item",
+                    "sub-title": "Sub Title",
+                    "start": "Start date",
+                    "end": "End date",
+                    "list": [
+                        {
+                            "title": "Repeating key points",
+                            "cssClass": null,
+                            "list": [
+                                {
+                                    "title": "Even lower level key points",
+                                    "list": [
+                                        "Even lower level key points"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
